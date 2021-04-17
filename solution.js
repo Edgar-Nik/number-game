@@ -88,6 +88,7 @@ const resetGame = () => {
   n = Math.round(Math.random() * 50) + 3;
   m = n - 1;
   a = null;
+  computerNumber.innerHTML = "";
   winScreen.style.display = "none";
   looseScreen.style.display = "none";
   playerNumber.value = "";
