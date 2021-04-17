@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Պրակտիկա Նիկողոսյան Էդգար</title>
+  </head>
+  <body>
+    <div class="looseScreen">
+      <h1>You loose</h1>
+      <h2>Computers choice: <span id="computerFinalChoice"></span></h2>
+      <button id="playAgain1" class="playAgain">Play again</button>
+    </div>
+    <div class="winScreen">
+      <h1>Congrats You Won ...</h1>
+      <button id="playAgain2" class="playAgain">Play again</button>
+    </div>
+    <div class="container">
+      <div class="_initialValue">
+        <h2>N = <span id="number"></span></h2>
+      </div>
+      <div class="players">
+        <div class="playersWrapper">
+          <div class="playerContainer">
+            <label for="playerNumber"
+              >Select number form 1 to <span id="max"></span
+            ></label>
+
+            <input type="number" min="1" max="100" id="playerNumber" />
+
+            <button id="submit">Submit</button>
+          </div>
+        </div>
+        <div class="playersWrapper">
+          <div class="computerContainer">
+            <div class="_inner">
+              <span>Computer's choice</span>
+              <span id="computerNumber"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./solution.js"></script>
+  </body>
+</html>
